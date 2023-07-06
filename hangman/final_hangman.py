@@ -1,6 +1,10 @@
 import random
 import hangman_art
 import hangman_words
+import os
+
+def cls():
+    os.system('cls' if os.name=='nt' else 'clear')
 
 word_list = hangman_words.word_list
 
@@ -24,6 +28,7 @@ for _ in range(word_length):
 
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
+    cls()
 
 
     if guess in hasChosen:
