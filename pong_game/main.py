@@ -27,7 +27,7 @@ game_is_on = True
 
 
 while game_is_on:
-  time.sleep(ball.move_speed())
+  time.sleep(ball.move_speed)
   screen.update()
   ball.move()
   
